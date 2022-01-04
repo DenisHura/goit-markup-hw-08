@@ -1,1 +1,2 @@
-# goit-markup-hw-08
+# goit-markup-hw-07
+HW-07 BEM and SASS
