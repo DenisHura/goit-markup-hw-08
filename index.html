@@ -58,20 +58,78 @@
             >
           </li>
         </ul>
+
+        <button
+          type="button"
+          class="open-menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="open-menu-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="mob-menu">
+          <button type="button" class="close-menu-btn js-close-menu">
+            <svg class="close-menu-btn__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mob-container">
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-list__item item">
+                <a href=" ./index.html" class="mob-menu-list__link link">Студия</a>
+              </li>
+              <li class="mob-menu-list__item item">
+                <a href="./portfolio.html" class="mob-menu-list__link link">Портфолио</a>
+              </li>
+              <li class="mob-menu-list__item">
+                <a href="" class="mob-menu-list__link link">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="mob-menu-contacts list">
+              <li class="mob-menu-contacts__item item">
+                <a href="tel:+380961111111" class="mob-menu-contacts__link link">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-menu-contacts__item item">
+                <a href="mailto:info@devstudio.com" class="mob-menu-contacts__link link">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-menu-social list">
+              <li class="mob-menu-social__item item">
+                <a href=" " class="mob-menu-social__link link">Instagram</a>
+              </li>
+              <li class="mob-menu-social__item item">
+                <a href=" " class="mob-menu-social__link link">Twitter</a>
+              </li>
+              <li class="mob-menu-social__item item">
+                <a href=" " class="mob-menu-social__link link">Facebook</a>
+              </li>
+              <li class="mob-menu-social__item item">
+                <a href=" " class="mob-menu-social__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
       <!------------------------------------ Герой ---------------------------->
-      <!-- <section class="hero">
+      <section class="hero">
         <h1 class="hero__title">Эффективные решения<br />для вашего бизнеса</h1>
         <button type="button" class="button button--type-primary" data-modal-open>
           Заказать услугу
         </button>
-      </section> -->
+      </section>
 
       <!-------------------------------- Преимущества ------------------------>
-      <!-- <section class="benefits">
+      <section class="benefits">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="benefits-list list">
@@ -82,7 +140,7 @@
                 </svg>
               </div>
               <h3 class="benefits-list__item-title">Внимание к деталям</h3>
-              <p>
+              <p class="benefits-list__item-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
@@ -93,7 +151,7 @@
                 </svg>
               </div>
               <h3 class="benefits-list__item-title">Пунктуальность</h3>
-              <p>
+              <p class="benefits-list__item-text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
@@ -104,7 +162,7 @@
                 </svg>
               </div>
               <h3 class="benefits-list__item-title">Планирование</h3>
-              <p>
+              <p class="benefits-list__item-text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
@@ -115,14 +173,16 @@
                 </svg>
               </div>
               <h3 class="benefits-list__item-title">Современные технологии</h3>
-              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              <p class="benefits-list__item-text">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-------------------------------- Чем мы занимаемся ------------------->
-      <!-- <section class="reference">
+      <section class="reference">
         <div class="container">
           <h2 class="reference-title section-title">Чем мы занимаемся</h2>
           <ul class="reference-list list">
@@ -148,7 +208,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!------------------------------- Наша команда ------------------------>
       <section class="team">

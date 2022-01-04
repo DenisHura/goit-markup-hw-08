@@ -9,6 +9,7 @@
 
 .site-nav-list {
   display: flex;
+  display: none;
 }
 
 .site-nav-list__item:not(:last-child) {
@@ -62,6 +63,7 @@
   &__item:not(:last-child) {
     margin-right: 50px;
   }
+  display: none;
 }
 
 .contacts__link {
@@ -93,4 +95,125 @@
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.mob-container {
+  // padding-left: 40px;
+  // padding-bottom: 48px;
+  // padding-top: 48px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.open-menu-btn,
+.close-menu-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.mob-menu {
+  position: fixed;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+
+  & .link {
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .mob-container {
+    padding-left: 40px;
+    padding-bottom: 48px;
+    padding-top: 48px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.close-menu-btn {
+  display: block;
+  margin-left: auto;
+}
+
+.mob-menu-list__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mob-menu-list__link {
+  font-size: 40px;
+  line-height: 1.18;
+  color: var(--primary-title-color);
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mob-menu-contacts__item {
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &:last-child {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+}
+.mob-menu-contacts__link {
+  color: var(--primary-text-color);
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mob-menu-social {
+  display: flex;
+  min-height: 22px;
+  margin-left: -10px;
+}
+
+.mob-menu-social__link {
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--accent-color);
+  margin-left: 10px;
+}
+
+.mob-menu-social__item:not(:last-child):after {
+  content: '';
+
+  width: 22px;
+  height: 0;
+  left: 0;
+  top: 0;
+
+  border: 0.1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-left: 10px;
 }
