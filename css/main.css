@@ -838,7 +838,9 @@ body {
 .mob-menu-social {
   display: flex;
   min-height: 22px;
+  width: 100%;
   margin-left: -10px;
+  margin-bottom: 48px;
 }
 
 .mob-menu-social__link {
