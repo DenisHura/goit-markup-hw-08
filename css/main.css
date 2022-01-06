@@ -161,6 +161,14 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+}
+
 .button-list {
   margin-top: 0;
   display: flex;
@@ -184,7 +192,12 @@ body {
 
 .button-list__item:not(:last-child) {
   margin-right: 8px;
-  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .button-list__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .button {
@@ -970,7 +983,12 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .benefits-list__item-title {
+    text-align: center;
+  }
 }
 
 .benefits-list__icon-container {
